@@ -1,0 +1,14 @@
+{
+  "port": {
+    "description": "监听端口",
+    "hint": "只绑 127.0.0.1，给同机的 DSH 插件用；改完要重启 AstrBot",
+    "type": "int",
+    "default": 8792
+  },
+  "token": {
+    "description": "访问令牌",
+    "hint": "留空则首次启动随机生成，存在插件数据目录的 token.txt；DSH 侧填同一个值，或直接指向这个文件",
+    "type": "string",
+    "default": ""
+  }
+}

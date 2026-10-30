@@ -1,0 +1,44 @@
+{
+  "name": "dsh-memory-sea",
+  "version": "0.1.0",
+  "description": "在 DSH 里给 livingmemory 开一扇窗：只读它的记忆库，把记忆画成一片海。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib",
+    "cordis.patch.yml",
+    "config.example.json",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "livingmemory",
+    "memory",
+    "astrbot"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.5"
+  }
+}

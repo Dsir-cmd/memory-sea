@@ -1,0 +1,21 @@
+{
+  "name": "memory-sea",
+  "version": "0.1.0",
+  "private": true,
+  "description": "在 DSH 里给你的 livingmemory 开一扇窗。",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "links": "node scripts/check-links.mjs",
+    "export": "node scripts/export.mjs",
+    "verify": "node scripts/verify-clean.mjs",
+    "demo": "node scripts/demo-data.mjs",
+    "smoke": "node scripts/smoke.mjs",
+    "doctor": "node scripts/doctor.mjs",
+    "link": "node scripts/link.mjs"
+  },
+  "license": "MIT"
+}

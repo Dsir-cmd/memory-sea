@@ -1,0 +1,10 @@
+name: astrbot_plugin_lm_bridge
+display_name: 记忆海 · LM 写入桥
+author: "memory-sea"
+version: 0.1.0
+desc: "只监听 127.0.0.1 的小接口：让同机的 DSH「记忆海」插件把提炼好的记忆交给 livingmemory 写入，走 LM 自己的写入管线。可选组件。"
+repo: ""
+entry: main.py
+support_platforms:
+  - aiocqhttp
+astrbot_version: ">=4.13,<5"

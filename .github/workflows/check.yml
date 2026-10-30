@@ -1,0 +1,31 @@
+name: check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: 语法检查
+        run: node scripts/check.mjs
+
+      - name: 死链检查
+        run: node scripts/check-links.mjs
+
+      - name: 禁运扫描（数据不许进仓库）
+        run: node scripts/verify-clean.mjs
+
+      - name: 造一份假库
+        run: node scripts/demo-data.mjs
+
+      - name: 冒烟（读路径 + HTTP 路由）
+        run: node scripts/smoke.mjs

@@ -1,0 +1,19 @@
+node_modules/
+data/
+
+# 运行时工件 —— 永远不进仓库
+demo/*.db
+demo/*.db-wal
+demo/*.db-shm
+*.log
+*.jsonl
+*.tgz
+
+# 编辑器/系统
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# 截图只在生成后手动确认再提交
+screenshots/*.tmp.png

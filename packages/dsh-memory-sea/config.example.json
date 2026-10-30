@@ -1,0 +1,21 @@
+{
+  "dbPath": "",
+  "astrbotRoot": "",
+  "contextChars": 1400,
+  "contextRecent": 6,
+  "capture": {
+    "enabled": false,
+    "base": "http://127.0.0.1:8792",
+    "token": "",
+    "tokenFile": "",
+    "personaId": "",
+    "provider": "",
+    "model": ""
+  },
+  "scope": {
+    "mode": "global",
+    "platform": "qq",
+    "identity": "",
+    "sessionId": ""
+  }
+}

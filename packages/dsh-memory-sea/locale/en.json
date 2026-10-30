@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "title": "Memory Sea",
+    "description": "A window into livingmemory inside DSH: read-only, and every memory becomes a point in the sea."
+  },
+  "nav": "Memory Sea",
+  "page": {
+    "title": "Memory Sea"
+  }
+}
